@@ -1,8 +1,13 @@
 # Corrente do Bem
 
-Conectar entidades que necessitam de ajuda, com as pessoas que querem ajudar.
+Por: @Maria de Fátima, @Alexandre, @Samuel, @Luís Teodoro, @Rodrigo
 
-### Documentation
+# Visão
+Conectar entidades que necessitam de ajuda, com as pessoas que querem ajudar.
+Documento: [visao.pdf]
+
+# Documentation
+
 ## Installation
 - instalar o GIT: https://git-scm.com/downloads
 - instalar o Node.JS: https://nodejs.org/en/download/
