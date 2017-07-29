@@ -1,18 +1,18 @@
 <div ba-panel ba-panel-class="profile-page">
   <div class="panel-content">
-    <div class="progress-info">Your profile is 70% Complete</div>
+    <div class="progress-info">Seu perfil está 70% Completo</div>
     <div class="progress">
       <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
       </div>
     </div>
 
-    <h3 class="with-line">General Information</h3>
+    <h3 class="with-line">Informações Gerais</h3>
 
     <div class="row">
       <div class="col-md-6">
         <div class="form-group row clearfix">
-          <label for="inputFirstName" class="col-sm-3 control-label">Picture</label>
+          <label for="inputFirstName" class="col-sm-3 control-label">Foto</label>
 
           <div class="col-sm-9">
             <div class="userpic">
@@ -20,7 +20,7 @@
                 <img ng-src="{{ picture }}" ng-click="uploadPicture()">
               </div>
               <i class="ion-ios-close-outline" ng-click="removePicture()" ng-if="!noPicture"></i>
-              <a href class="change-userpic" ng-click="uploadPicture()">Change Profile Picture</a>
+              <a href class="change-userpic" ng-click="uploadPicture()">Alterar minha foto</a>
               <input type="file" ng-show="false" id="uploadFile" ng-file-select="onFileSelect($files)">
             </div>
           </div>
@@ -32,14 +32,14 @@
     <div class="row">
       <div class="col-md-6">
         <div class="form-group row clearfix">
-          <label for="inputFirstName" class="col-sm-3 control-label">First Name</label>
+          <label for="inputFirstName" class="col-sm-3 control-label">Nome</label>
 
           <div class="col-sm-9">
             <input type="text" class="form-control" id="inputFirstName" placeholder="" value="Anastasiya">
           </div>
         </div>
         <div class="form-group row clearfix">
-          <label for="inputLastName" class="col-sm-3 control-label">Last Name</label>
+          <label for="inputLastName" class="col-sm-3 control-label">Sobrenome</label>
 
           <div class="col-sm-9">
             <input type="text" class="form-control" id="inputLastName" placeholder="" value="">
@@ -48,29 +48,24 @@
       </div>
       <div class="col-md-6">
         <div class="form-group row clearfix">
-          <label class="col-sm-3 control-label">Department</label>
+          <label class="col-sm-3 control-label">CPF</label>
 
           <div class="col-sm-9">
-            <select class="form-control" selectpicker>
-              <option>Web Development</option>
-              <option>System Development</option>
-              <option>Sales</option>
-              <option>Human Resources</option>
-            </select>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Insira o CPF" value="306.115.208-80">
           </div>
         </div>
 
         <div class="form-group row clearfix">
-          <label for="inputOccupation" class="col-sm-3 control-label">Occupation</label>
+          <label for="inputOccupation" class="col-sm-3 control-label"></label>
 
           <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputOccupation" placeholder="" value="Front End Web Developer">
+            
           </div>
         </div>
       </div>
     </div>
 
-    <h3 class="with-line">Change Password</h3>
+    <h3 class="with-line">Alterar senha</h3>
 
     <div class="row">
       <div class="col-md-6">
@@ -93,7 +88,17 @@
       </div>
     </div>
 
-    <h3 class="with-line">Contact Information</h3>
+    <h3 class="with-line">Habilidades</h3>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div ba-panel ba-panel-title="" ba-panel-class="with-scroll">
+          <div include-with-scope="app/pages/tables/widgets/editableRowTable.html"></div>
+        </div>
+      </div>
+    </div>
+    
+    <h3 class="with-line">Informações para contato</h3>
 
     <div class="row">
       <div class="col-md-6">
@@ -105,7 +110,7 @@
           </div>
         </div>
         <div class="form-group row clearfix">
-          <label for="inputPhone" class="col-sm-3 control-label">Phone</label>
+          <label for="inputPhone" class="col-sm-3 control-label">Telefone</label>
 
           <div class="col-sm-9">
             <input type="text" class="form-control" id="inputPhone" placeholder="" value="+1 (23) 456 7890">
@@ -114,28 +119,33 @@
       </div>
       <div class="col-md-6">
         <div class="form-group row clearfix">
-          <label class="col-sm-3 control-label">Office Location</label>
+          <label class="col-sm-3 control-label">UF</label>
 
           <div class="col-sm-9">
             <select class="form-control" title="Standard Select" selectpicker>
-              <option>San Francisco</option>
+              <option selected="selected">Paraná</option>
+              <option>São Paulo</option>
+              <option>Rio de Janeiro</option>
+              <option>Rio Grande do Sul</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row clearfix">
+          <label for="inputRoom" class="col-sm-3 control-label">Cidade</label>
+
+          <div class="col-sm-9">
+            <select class="form-control" title="Standard Select" selectpicker>
+              <option selected="selected">Curitiba</option>
               <option>London</option>
               <option>Minsk</option>
               <option>Tokio</option>
             </select>
           </div>
         </div>
-        <div class="form-group row clearfix">
-          <label for="inputRoom" class="col-sm-3 control-label">Room</label>
-
-          <div class="col-sm-9">
-            <input type="text" class="form-control" id="inputRoom" placeholder="" value="303">
-          </div>
-        </div>
       </div>
     </div>
 
-    <h3 class="with-line">Social Profiles</h3>
+    <h3 class="with-line">Redes Sociais</h3>
 
     <div class="social-profiles row clearfix">
       <div class="col-md-3 col-sm-4" ng-repeat="item in socialProfiles">
@@ -153,26 +163,26 @@
       </div>
     </div>
 
-    <h3 class="with-line">Send Email Notifications</h3>
+    <h3 class="with-line">Enviar Email para Notificações</h3>
 
     <div class="notification row clearfix">
       <div class="col-sm-6">
         <div class="form-group row clearfix">
-          <label class="col-xs-8">When I receive a message</label>
+          <label class="col-xs-8">Quando eu receber mensagens</label>
 
           <div class="col-xs-4">
             <switch color="primary" ng-model="switches[0]"></switch>
           </div>
         </div>
         <div class="form-group row clearfix">
-          <label class="col-xs-8">When Someone sends me an invitation</label>
+          <label class="col-xs-8">Quando for convidado por entidades</label>
 
           <div class="col-xs-4">
             <switch color="primary" ng-model="switches[1]"></switch>
           </div>
         </div>
         <div class="form-group row clearfix">
-          <label class="col-xs-8">When profile information changes</label>
+          <label class="col-xs-8">Ocorrer eventos nas entidades que trabalhei</label>
 
           <div class="col-xs-4">
             <switch color="primary" ng-model="switches[2]"></switch>
@@ -181,14 +191,14 @@
       </div>
       <div class="col-sm-6">
         <div class="form-group row clearfix">
-          <label class="col-xs-8">When anyone logs into your account from a new device or browser</label>
+          <label class="col-xs-8">Novas entidades se cadastrarem na minha cidade</label>
 
           <div class="col-xs-4">
             <switch color="primary" ng-model="switches[3]"></switch>
           </div>
         </div>
         <div class="form-group row clearfix">
-          <label class="col-xs-8">Weekly Reports</label>
+          <label class="col-xs-8">Atividades semanais dentro das entidades</label>
 
           <div class="col-xs-4">
             <switch color="primary" ng-model="switches[4]"></switch>
@@ -196,7 +206,7 @@
         </div>
 
         <div class="form-group row clearfix">
-          <label class="col-xs-8">Daily Reports</label>
+          <label class="col-xs-8">Planejamento de atividades mensal</label>
 
           <div class="col-xs-4">
             <switch color="primary" ng-model="switches[5]"></switch>
@@ -205,7 +215,7 @@
       </div>
     </div>
     <button type="button" class="btn btn-primary btn-with-icon save-profile">
-      <i class="ion-android-checkmark-circle"></i>Update Profile
+      <i class="ion-android-checkmark-circle"></i>Atualizar
     </button>
   </div>
 </div>
