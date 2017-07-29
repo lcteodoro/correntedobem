@@ -9,7 +9,6 @@
     'ui.router',
 
     'BlurAdmin.pages.dashboard',
-	'BlurAdmin.pages.dashboard2',
     'BlurAdmin.pages.ui',
     'BlurAdmin.pages.components',
     'BlurAdmin.pages.form',
@@ -28,15 +27,15 @@
       title: 'Pages',
       icon: 'ion-document',
       subMenu: [{
-        title: 'Sign In',
+        title: 'Entrar',
         fixedHref: 'auth.html',
         blank: true
       }, {
-        title: 'Sign Up',
+        title: 'Me Cadastrar',
         fixedHref: 'reg.html',
         blank: true
       }, {
-        title: 'User Profile',
+        title: 'Meu Perfil',
         stateRef: 'profile'
       }, {
         title: '404 Page',
@@ -44,8 +43,9 @@
         blank: true
       }]
     });
+    /*
     baSidebarServiceProvider.addStaticItem({
-      title: 'Menu Level 1',
+      title: 'Menu ',
       icon: 'ion-ios-more',
       subMenu: [{
         title: 'Menu Level 1.1',
@@ -58,6 +58,7 @@
         }]
       }]
     });
+    */
   }
 
 })();
