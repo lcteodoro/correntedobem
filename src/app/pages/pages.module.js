@@ -11,6 +11,7 @@
     'BlurAdmin.pages.dashboard',
     'BlurAdmin.pages.profile',
     'BlurAdmin.pages.entidades',
+
   ])
       .config(routeConfig);
 
