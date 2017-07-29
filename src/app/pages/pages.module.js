@@ -9,12 +9,6 @@
     'ui.router',
 
     'BlurAdmin.pages.dashboard',
-    'BlurAdmin.pages.ui',
-    'BlurAdmin.pages.components',
-    'BlurAdmin.pages.form',
-    'BlurAdmin.pages.tables',
-    'BlurAdmin.pages.charts',
-    'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
     'BlurAdmin.pages.entidades',
   ])
@@ -25,7 +19,7 @@
     $urlRouterProvider.otherwise('/dashboard');
 
     baSidebarServiceProvider.addStaticItem({
-      title: 'Pages',
+      title: 'Paginas',
       icon: 'ion-document',
       subMenu: [{
         title: 'Entrar',

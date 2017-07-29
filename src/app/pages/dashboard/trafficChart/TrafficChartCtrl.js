@@ -15,11 +15,11 @@
       var dashboardColors = baConfig.colors.dashboard;
       $scope.doughnutData = {
           labels: [
-              'Other',
-              'Search engines',
-              'Referral Traffic',
-              'Direct Traffic',
-              'Ad Campaigns'
+              'Outros',
+              'Idosos',
+              'Orfanatos',
+              'Animais',
+              'Adolecentes'
           ],
           datasets: [
               {

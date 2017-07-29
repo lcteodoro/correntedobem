@@ -13,22 +13,22 @@
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
     $scope.charts = [{
       color: pieColor,
-      description: 'New Visits',
+      description: 'Visitas',
       stats: '57,820',
       icon: 'person',
     }, {
       color: pieColor,
-      description: 'Purchases',
+      description: 'Doações',
       stats: '$ 89,745',
       icon: 'money',
     }, {
       color: pieColor,
-      description: 'Active Users',
+      description: 'Ativistas',
       stats: '178,391',
       icon: 'face',
     }, {
       color: pieColor,
-      description: 'Returned',
+      description: 'Entidades',
       stats: '32,592',
       icon: 'refresh',
     }
